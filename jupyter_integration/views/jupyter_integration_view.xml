@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="web_dummy assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/jupyter_integration/static/src/css/dummy.css"/>
+
+                <script type="text/javascript" src="/jupyter_integration/static/src/js/jupyter_integration.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

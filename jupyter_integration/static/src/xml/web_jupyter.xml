@@ -1,0 +1,29 @@
+<template>
+<t t-name="DummyView">
+    <div class="oe_dummyview_view">
+        <div class="oe_dummyview_buttons"/>
+        <table class="oe_dummyview_groups">
+        <tr class="oe_dummyview_groups_headers">
+            <td class="oe_dummyview_dummy_cell"><div/></td>
+        </tr>
+        <tr class="oe_dummyview_content-cont">
+            <td><div class="oe_dummyview_content"/></td>
+        </tr>
+        </table>
+    </div>
+</t>
+<div t-name="DummyView.buttons" class="oe_dummyview_buttons">
+    <t t-if="widget.options.action_buttons !== false">
+            <button type="button" class="btn btn-primary oe_dummyview_button_new">
+                <t t-esc="widget.options.create_text || _t('Action 1')"/>
+            </button>
+            <button type="button" class="btn btn-primary oe_dummyview_button">
+                <t t-esc="widget.options.action2_text || _t('Action 2')"/>
+            </button>
+            <span class="oe_fade">or</span>
+            <div class="oe_bounce_container">
+                <a href="#" class="oe_bold oe_dummyview_add_column">Action 3</a>
+            </div>
+    </t>
+</div>
+</template>
