@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <record id="test_pychart" model="ir.ui.view">
+        <field name="name">My View</field>
+        <field name="name">pychart</field>
+        <field name="arch" type="xml">
+            <pychart>
+                <field name="name" />
+                <field name="code" />
+            </pychart>
+        </field>
+    </record>
+
+</openerp>

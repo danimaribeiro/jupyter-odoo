@@ -1,16 +1,15 @@
 <openerp>
     <data>
-        <menuitem id="main_petstore_menu" name="Pet Store" />
 
-        <menuitem id="petstore_menu" name="Pet Store"
-          parent="main_petstore_menu" />
+        <menuitem id="petstore_menu" name="Dashboards"
+          parent="base.menu_reporting" />
 
         <record id="action_home_page" model="ir.actions.client">
-          <field name="name">Pet Store Home</field>
+          <field name="name">Curva ABC de clientes</field>
           <field name="tag">jupyter_integration.homepage</field>
         </record>
 
-        <menuitem id="home_page_petstore_menu" name="Home Page" parent="petstore_menu"
+        <menuitem id="home_page_petstore_menu" name="Curva ABC Clientes" parent="petstore_menu"
           action="action_home_page"/>
 
     </data>

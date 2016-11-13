@@ -8,7 +8,7 @@ openerp.jupyter_integration = function(instance, local) {
     local.HomePage = instance.Widget.extend({
         className: 'oe_jupyter_integration',
         start: function() {
-            this.$el.append('<iframe style="width:100%;height:100%;border:none;position:absolute;" src="http://localhost:8888/nbconvert/html/Notebooks/odoo_bi.ipynb" />')
+            this.$el.append('<iframe style="width:100%;height:100%;border:none;position:absolute;" src="http://localhost:8888/notebooks/Notebook/odoo-curva-abc-clientes.ipynb?dashboard" />')
         },
     });
 
